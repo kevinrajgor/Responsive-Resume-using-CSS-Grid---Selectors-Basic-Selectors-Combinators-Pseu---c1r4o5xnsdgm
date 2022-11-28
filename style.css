@@ -7,3 +7,41 @@
 }
 
 /* Write CSS code below */
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 30%;
+    border: 5px solid white;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: darkcyan;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    width: 900px;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:674px) {
+    .main-content{
+        grid-column: repeat(1,1fr);
+    }
+    
+}
